@@ -1,13 +1,12 @@
 # upMob
 <p align="center">
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jayantkatia/upMob/Flutter%20CI?style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/jayantkatia/upMob?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/jayantkatia/upMob?style=for-the-badge)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jayantkatia/upMob?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/20gurpreet01/UPMob?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/20gurpreet01/UPMob?style=for-the-badge)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/20gurpreet01/UPMob?style=for-the-badge)
 </p>
 
-<p align="center">UpMob uses <a href="https://github.com/jayantkatia/upMob-api">UpMob API</a> to get the mobiles devices information which are yet to come to Indian markets<p>
+<p align="center">UpMob uses <a href="https://github.com/20gurpreet01/UPMob-api">UpMob API</a> to get the mobiles devices information which are yet to come to Indian markets<p>
 
 
 
@@ -20,8 +19,8 @@
     ```
 4. Open the code and start editing.
 
-## :hammer: Uses UpMob API 
-UpMob depends on [UpMob API v1.x](https://github.com/jayantkatia/upMob-api/releases)
+## :hammer: Uses UPMob API 
+UpMob depends on [UPMob API v1.x](https://github.com/20gurpreet01/UPMob-API/releases)
 
 ## :pencil2: TODO 
 - [ ] Bookmark devices
@@ -29,7 +28,7 @@ UpMob depends on [UpMob API v1.x](https://github.com/jayantkatia/upMob-api/relea
 - [ ] Locate Nearby Stores using Google Maps API 
 
 ## :memo: License
-Licensed under the [MIT License](https://github.com/jayantkatia/upMob/LICENSE). 
+Licensed under the [MIT License](https://github.com/20gurpreet01/UPMob/LICENSE). 
 
 ## :sparkles: Development and Contributing
 Yes, please! Feel free to contribute, raise issues and recommend best practices.
