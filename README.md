@@ -20,7 +20,7 @@
 4. Open the code and start editing.
 
 ## :hammer: Uses UPMob API 
-UpMob depends on [UPMob API v1.x](https://github.com/20gurpreet01/UPMob-API/releases)
+UpMob depends on [UPMob API](https://github.com/20gurpreet01/UPMob-API)
 
 ## :pencil2: TODO 
 - [ ] Bookmark devices
@@ -28,7 +28,7 @@ UpMob depends on [UPMob API v1.x](https://github.com/20gurpreet01/UPMob-API/rele
 - [ ] Locate Nearby Stores using Google Maps API 
 
 ## :memo: License
-Licensed under the [MIT License](https://github.com/20gurpreet01/UPMob/LICENSE). 
+Licensed under the [MIT License](https://github.com/20gurpreet01/UPMob/blob/main/LICENSE). 
 
 ## :sparkles: Development and Contributing
 Yes, please! Feel free to contribute, raise issues and recommend best practices.
