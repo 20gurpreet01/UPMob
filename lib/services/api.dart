@@ -1,5 +1,10 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 class API {
-  static String host = "40.76.94.137";
-  Uri getDevicesURI() =>
-      Uri(scheme: 'http', host: host, port: 8082, path: '/devices');
+  Uri getDevicesURI() => Uri(
+        scheme: 'http',
+        host: dotenv.env['API_HOST'],
+        port: int.tryParse(dotenv.env['API_PORT']!),
+        path: dotenv.env['API_PATH'],
+      );
 }

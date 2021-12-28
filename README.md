@@ -13,11 +13,30 @@
 ## :rocket: Getting Started
 1. <a href="https://flutter.dev/docs/get-started/install">**Install the Flutter SDK & Android Studio**</a>
 2. Navigate into the project directory.
-3. Run 
+3. Define the environment variables in ```.env``` file at root of the project.
+   ```.env
+    API_HOST=yourhost.com
+    API_PORT=8080
+    API_PATH=/some-path
+    ```
+
+    You might like [rest-client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client), if you use [VS Code](https://code.visualstudio.com/). This extension  allows you to send HTTP request and view the response in VS Code directly. Rest-client API requests are already defined in the ```api_requests/``` directory. You need to define the environment vairables though. In the ```.vscode/settings.json```,
+    ```
+    {
+        "rest-client.environmentVariables": {
+            "$shared": {
+                "API_HOST": "yourhost.com",
+                "API_PORT": "8080",
+                "API_PATH": "/some-path"
+            }
+        }
+    }
+    ```
+4. Run 
     ```shell
     flutter run 
     ```
-4. Open the code and start editing.
+5. Open the code and start editing.
 
 ## :hammer: Uses UPMob API 
 UpMob depends on [UPMob API](https://github.com/20gurpreet01/UPMob-API)

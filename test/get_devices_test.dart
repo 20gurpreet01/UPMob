@@ -1,3 +1,4 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:http/http.dart' as http;
@@ -8,7 +9,9 @@ import 'package:upcoming_mobiles_frontend/services/api_services.dart';
 import 'get_devices_test.mocks.dart';
 
 @GenerateMocks([http.Client])
-void main() {
+void main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: '.env');
   group("getDevices", () {
     test('WHEN http call completes successfully THEN returns a List of Devices', () async {
       final client = MockClient();
@@ -21,7 +24,9 @@ void main() {
           '"img_url": "https://picsum.photos/100",'
           '"source_url": "https://picsum.photos",'
           '"price": 9999,'
-          '"spec_score": 89'
+          '"spec_score": 89,'
+          '"last_updated": "09-072021",'
+          '"scrape_timestamp":"20391239"'
           '}]',
           200));
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:upcoming_mobiles_frontend/screens/bookmarksPage.dart';
 
 import '../model/device.dart';
 import '../widgets/device_card.dart';
@@ -19,14 +20,13 @@ class _MyHomePageState extends State<MyHomePage> {
           centerTitle: true,
           title: Text(
             "Upcoming Mobiles",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
           ),
           actions: [
             IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.info_outline_rounded),
-              tooltip: "\nScheduler scraps 91mobiles.com website every 24 hours\nBuilt with 🧡\n",
-            )
+              onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => BookmarksPage())),
+              icon: Icon(Icons.bookmarks_rounded),
+            ),
           ],
         ),
         body: FutureBuilder<List<Device>>(
@@ -35,18 +35,20 @@ class _MyHomePageState extends State<MyHomePage> {
             if (snapshot.hasData && !snapshot.hasError && !(snapshot.data is Exception)) {
               return Container(
                 child: ListView.builder(
-                  itemCount: snapshot.data?.length ?? 0,
+                  itemCount: snapshot.data!.length,
                   itemBuilder: (context, index) => DeviceCard(device: snapshot.data![index]),
                 ),
               );
             } else if (snapshot.hasError || (snapshot.data is Exception)) {
+              print(snapshot.data);
+
               return Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
                       Icons.error,
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).colorScheme.secondary,
                       size: 64,
                     ),
                     Text(
